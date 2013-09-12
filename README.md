@@ -1,1 +1,1 @@
-<h1>Grid SysTEM</h1>
+<h1>Grid System</h1>
