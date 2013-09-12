@@ -1,0 +1,65 @@
+$bodysize: 11px
+$width: 960px
+@import "reset"
+@import "compass"
+html
+	background: darken(white,10%)
+.wrap
+	width: $width
+	margin: 0 auto
+@mixin gongrid-rwd($cloum_number,$cloum_gutter)
+	width: ($width - $cloum_gutter*($cloum_number - 1) ) / $cloum_number
+	margin-right: $cloum_gutter
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	*behavior: url(/css/boxsizing.htc)  
+	&:nth-child(#{$cloum_number}n)
+		margin-right: 0
+.content
+	padding: 30px 0
+	background: darken(white,3%)
+	+clearfix
+.content ul 
+.content li
+	@include gongrid-rwd(5,80px)
+	height: auto
+	margin-bottom: 30px
+	border: 3px solid gray
+	float: left
+	img 
+		max-width: 100%	
+		height: auto
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
